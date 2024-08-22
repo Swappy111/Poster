@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+.container{
+    background-color: #e5e5fd;
+    min-height: 100vh;
+    border: 10px solid #1d1e4c;
+}
+
+.top_section {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+.top_section h1{
+    font-size: 50px;
+    font-weight: bold;
+    color:#1d1e4c;
+    text-transform: uppercase;
+    align-items: flex-end;
+}
+.top_section h4{
+    font-size: 30px;
+    text-align: end;
+}
+.content{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.image_container,img{
+    height: 420px;
+    width: 400px;
+}
+.image_container {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+.about_section{
+    margin-top: 50px;
+}  
+
+.about_section h2{
+    font-size: 70px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.about_section p{
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    text-align: justify;
+}
+
+.bio_section{
+    margin: 50px 0;
+}
+.bio_section h3{
+    margin-bottom: 20px;
+}
+
+.bio_section ul{
+    margin-left: 50px;
+}
+.bio_section li{
+    margin-bottom: 15px;
+}
+
+footer{
+    margin: 50px 0;
+}
+footer p{ 
+    text-align: end;
+}
+
+/* -------------------------------------------- */
+@media (max-width: 1024px) {
+    .content{
+        padding: 0 30px;
+        padding-top: 30px;
+    }
+    .image_container,img{
+        height: 320px;
+        width: 300px;
+    }
+    .image_container {
+        border-radius: 50%;
+        overflow: hidden;
+      }
+     
+}
+@media (max-width: 768px) {
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+    .top_section {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .top_section h1 {
+        font-size: 36px;
+    }
+
+    .top_section h4 {
+        font-size: 20px;
+    }
+
+    .image_container, img {
+        height: 250px;
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    .about_section h2 {
+        font-size: 40px;
+    }
+
+    .about_section p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .bio_section ul {
+        margin-left: 20px;
+    }
+
+    footer p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .top_section {
+        margin-top: 30px;
+    }
+
+    .top_section h1 {
+        font-size: 28px;
+    }
+
+    .top_section h4 {
+        font-size: 18px;
+    }
+
+    .image_container, img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .about_section h2 {
+        font-size: 32px;
+    }
+
+    .about_section p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .bio_section ul {
+        margin-left: 15px;
+    }
+}
